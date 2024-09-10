@@ -46,7 +46,6 @@ export async function GET(request) {
       { status: 200 }
     );
   } catch (error) {
-    console.error("Error in fetching messages:", error);
     return new Response(
       JSON.stringify({
         success: false,

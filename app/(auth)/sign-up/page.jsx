@@ -51,7 +51,6 @@ const SignUp = () => {
           setUsernameMsg(response.data.message);
         }
       } catch (e) {
-        console.log("Error in checking unique username");
       } finally {
         setIsChecking(false);
       }
@@ -71,7 +70,6 @@ const SignUp = () => {
 
       router.replace(`/verify/${username}`);
     } catch (e) {
-      console.log("Error in submitting signup", e);
       toast({
         title: "Signup Error",
         description:

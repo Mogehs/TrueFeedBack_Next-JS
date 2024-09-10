@@ -45,7 +45,6 @@ export async function POST(request) {
       { status: 200 }
     );
   } catch (e) {
-    console.log("Error in getting accept message details" + e);
     return Response.json(
       {
         success: false,
@@ -86,7 +85,6 @@ export async function GET(request) {
       { status: 200 }
     );
   } catch (error) {
-    console.error("Error retrieving message acceptance status:", error);
     return Response.json(
       { success: false, message: "Error retrieving message acceptance status" },
       { status: 500 }

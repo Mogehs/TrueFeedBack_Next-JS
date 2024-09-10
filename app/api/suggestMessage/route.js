@@ -30,7 +30,6 @@ export async function POST(request) {
     // Return the streaming text response
     return new StreamingTextResponse(stream);
   } catch (e) {
-    console.error("An unexpected error occurred:", e);
     throw e;
   }
 }

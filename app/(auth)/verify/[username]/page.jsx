@@ -38,7 +38,6 @@ export default function VerifyAccount() {
 
       router.replace("/sign-in");
     } catch (error) {
-      console.log("ye" + error);
       toast({
         title: "Verification Failed",
         description: "An error occurred. Please try again.",

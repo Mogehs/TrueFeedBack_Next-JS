@@ -40,7 +40,6 @@ export async function POST(request) {
       { status: 200, headers: { "Content-Type": "application/json" } }
     );
   } catch (e) {
-    console.log("Error in sending message: " + e);
     return new Response(
       JSON.stringify({
         success: false,

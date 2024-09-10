@@ -94,7 +94,6 @@ export async function POST(request) {
       { status: 200 }
     );
   } catch (e) {
-    console.error("Failed to sign up: " + e);
     return new Response(
       JSON.stringify({
         success: false,

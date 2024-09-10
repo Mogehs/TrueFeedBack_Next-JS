@@ -35,7 +35,6 @@ const SignIn = () => {
       });
 
       if (result.error) {
-        console.log("Error:", result.error);
         toast({
           title: "Sign In Error",
           description:
@@ -44,11 +43,9 @@ const SignIn = () => {
           variant: "destructive",
         });
       } else {
-        console.log("Successfully signed in");
         router.replace("/dashboard");
       }
     } catch (e) {
-      console.log("Error in submitting sign-in", e);
       toast({
         title: "Sign In Error",
         description:

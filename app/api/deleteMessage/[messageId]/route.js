@@ -52,7 +52,6 @@ export async function DELETE(request, { params }) {
       { status: 200 }
     );
   } catch (e) {
-    console.log("Error in founding Message " + e);
     return Response(
       JSON.stringify(
         {
